@@ -1,0 +1,3753 @@
+
+	
+	<!DOCTYPE html>
+	<html lang="en-US">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			<meta name="pinterest" content="nopin" />
+			<meta name="pinterest" content="nohover" />
+			
+			<meta name="3778517eb4810dfb5d143ed8f1b359b3b5a82923" content="0f56257c3db4a222e91b11bc6871c4df2e263b28" />
+			<link rel="apple-touch-icon" sizes="57x57" href="/img/org.1/favicons/apple-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="/img/org.1/favicons/apple-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="/img/org.1/favicons/apple-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="/img/org.1/favicons/apple-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="/img/org.1/favicons/apple-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="/img/org.1/favicons/apple-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="/img/org.1/favicons/apple-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="/img/org.1/favicons/apple-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="/img/org.1/favicons/apple-icon-180x180.png">
+			<link rel="icon" type="image/png" sizes="192x192"  href="/img/org.1/favicons/android-icon-192x192.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="/img/org.1/favicons/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="96x96" href="/img/org.1/favicons/favicon-96x96.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="/img/org.1/favicons/favicon-16x16.png">
+			<link rel="manifest" href="/img/org.1/favicons/manifest.json">
+			<meta name="msapplication-TileColor" content="#ffffff">
+			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+			
+			
+			
+
+<script>
+/* stubs */
+	const hapticsImpactHeavy = async () => {
+	};
+	const hapticsImpactMedium = async () => {
+	};
+	const hapticsImpactLight = async () => {
+	};
+	const hapticsVibrate = async () => {
+	};
+	const hapticsSelectionStart = async () => {
+	};
+	const hapticsSelectionChanged = async () => {
+	};
+	const hapticsSelectionEnd = async () => {
+	};
+</script>
+
+			
+<script>
+	
+		function setPullToRefresh() {}
+	
+	function gotoURL(inurl) {
+		window.location.href = inurl;
+		return;
+	}
+	function contentLoaded(isHTMX, f, caller = "") {
+		console.log("contentLoaded: " + isHTMX + " " + caller);
+		if (isHTMX == true) {
+			document.body.addEventListener('htmx:afterSettle', f, {once: true});
+		} else {
+			if (document.readyState !== 'loading') {
+				console.log('document is already ready, just execute code here');
+				f();
+			} else {
+				console.log('document was not ready, place code here');
+				document.addEventListener('DOMContentLoaded', f, {once: true});
+			}
+		}
+	}
+
+	function HideAppSidebarOnKeyboard() {
+		console.log("In HideAppSidebarOnKeyboard");
+		
+	}
+	// stub
+	function logError(data, url, linenumber) {
+		console.log(data)
+		return;
+	}
+	var pushSubToken;
+	var ignoreErrors = false;
+	var lastError = "";
+	
+		window.onerror = function(errorMessage, errorUrl, errorLine, errorColumn, errorObj) {
+			let column;
+			let stack;
+			if (console && console.log) {
+				console.log("msg:", errorMessage);
+				console.log("url:", errorUrl);
+				console.log("line:", errorLine);
+				if (errorColumn !== undefined && errorObj != null) {
+					console.log("column:", errorColumn);
+					column = errorColumn;
+				}
+				if (errorObj !== undefined && errorObj != null) {
+					console.log("stack:", errorObj.stack);
+					stack = errorObj.stack;
+				}
+				console.log("client_id:", "web.web09.2078805.1735954184637900220");
+				console.log("last_error:", lastError);
+				console.log("stack:", stack);
+			}
+			if (errorUrl == "" || errorUrl === null) {
+				errorUrl = window.location.href;
+			}
+			if (errorMessage.includes("SecurityError:") == true) {
+				ignoreErrors = true;
+			}
+			if (ignoreErrors == true) {
+				console.log("cookies, disabled, ignoring");
+				lastError = errorMessage;
+				return;
+			}
+			jQuery.ajax({
+				type: 'POST',
+				url: '/jsclienterror',
+				data: {
+					msg: errorMessage,
+					url: errorUrl,
+					line: errorLine,
+					column: column,
+					stack: stack,
+					last_error: lastError,
+					client_id: "web.web09.2078805.1735954184637900220"
+				},
+				success: function() {
+					if (console && console.log) {
+						console.log('JS error report successful.');
+					}
+					lastError = errorMessage;
+				},
+				error: function() {
+					if (console && console.error) {
+						console.error('JS error report submission failed!');
+					}
+					lastError = errorMessage;
+				}
+			});
+			return true;
+		}
+	
+</script>
+			
+			
+			<script src="/tinymce-5.10.9/tinymce.min.js"></script>
+			<script src="/js/browser-image-compression-2.0.2.min.js"></script>
+			<link href="/css/application-df34716411c2f39244dd0e27014688d2.css" rel="stylesheet" id="groupsio-css">
+			<script src="/js/application-9b2c27b802a13063cf8a712fe566f004.js" id="groupsio-js"></script>
+			<script src="/js/run_prettify.js"></script>
+			<title>
+				
+	peds-endo@groups.io | Topics
+
+			</title>
+			
+
+			
+				
+			
+			
+<link rel="canonical" href="https://groups.io/g/peds-endo/topics">
+<meta property="og:title" content="Topics" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://groups.io/g/peds-endo/coverphoto" />
+
+<script>
+	htmx.config.scrollBehavior = "instant";
+	htmx.config.historyCacheSize = 0;
+	htmx.config.defaultSettleDelay = 0;
+	console.log("FULL PAGE LOAD");
+</script>
+		</head>
+		<body id="body" class="" hx-headers='{"Accept-Version": "76a6103496def134e63a0ae79e521cc2c52e48d4"}' hx-ext="preload" hx-boost="false">
+			
+				<script>
+					if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.body.classList.add('dark-mode');
+					}
+				</script>
+			
+
+			
+				<div class="navbar navbar-head navbar-fixed-top" role="navigation" id="headerbar" style="border:0">
+					<div class="container-fluid" style="padding-left:0px;">
+						<span id="logo">
+							
+								<a href="https://groups.io" class="navbar-left">
+									<img src="https://groups.io/img/org.1/mainlogo.png?cachebust" height="50" alt="Groups.io">
+								</a>
+							
+						</span>
+						<ul class="nav navbar-nav hidden-xs">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Your Groups
+									<span id="your-groups-badge" class="badge"></span>
+									<b class="caret"></b>
+								</a>
+								<ul id="your-groups-list" class="dropdown-menu scrollable-groups-menu">
+									
+										
+											
+											
+												<li>
+													<a href="https://groups.io/g/peds-endo/topics">
+														<i class="fa-fw fa fa-users"></i>
+														&nbsp;Pediatric Endocrinology Clinical Case Mailing List
+													</a>
+												</li>
+											
+										
+									
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="https://groups.io/groups">
+											<i class="fa-fw fa fa-users"></i>
+											Manage My Subscriptions
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+								<li>
+									<a href="https://groups.io/search">
+										Find or Create a Group
+									</a>
+								</li>
+							
+							
+						</ul>
+						<ul class="nav navbar-nav pull-right visible-xs" style="margin-top:5px;margin-bottom:5px;">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#mobileAccount" style="padding-top:10px;padding-bottom:0px;">
+									
+										<i class="fa-fw fa fa-lg fa-user"></i>
+									
+								</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+							<li>
+								<a class="hidden-xs hidden-sm" href="https://groups.io/helpcenter" target="_blank">
+									Help
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									
+										allan.ascencio@gmail.com
+									
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">
+										
+											allan.ascencio@gmail.com
+										
+									</li>
+									<li role="separator" class="divider"></li>
+									
+									<li>
+										<a href="https://groups.io/settings">
+											<i class="pull-right fa-fw fa fa-user"></i>
+											Settings
+										</a>
+									</li>
+									<li>
+										<a href="https://groups.io/logout">
+											<i class="pull-right fa-fw fa fa-power-off"></i>
+											Log Out
+										</a>
+									</li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal fade" id="mobileAccount" role="dialog">
+					<div class="modal-dialog" style="margin-top:50px;">
+						<div class="modal-content">
+							<div class="modal-body">
+
+									<ul class="list-group noborderlist">
+										<li class="dropdown-header">
+											
+												allan.ascencio@gmail.com
+											
+										</li>
+										<li class="noborderitem list-group-item">
+											<a href="https://groups.io/groups">
+												<i class="pull-right fa-fw fa fa-users"></i>
+												Manage My Subscriptions
+											</a>
+										</li>
+										<li class="noborderitem list-group-item">
+											<a href="https://groups.io/helpcenter" target="_blank">
+												<i class="pull-right fa-fw fa fa-question-circle"></i>
+												Help
+											</a>
+										</li>
+										
+											<li class="noborderitem list-group-item">
+												<a href="https://groups.io/search">
+													<i class="pull-right fa-fw fa fa-search"></i>
+													Find or Create a Group
+												</a>
+											</li>
+										
+										
+										<li class="noborderitem list-group-item">
+											<a href="https://groups.io/settings">
+												<i class="pull-right fa-fw fa fa-user"></i>
+												Settings
+											</a>
+										</li>
+										<li class="noborderitem list-group-item">
+											<a href="https://groups.io/logout">
+												<i class="pull-right fa-fw fa fa-power-off"></i>
+												Log Out
+											</a>
+										</li>
+										
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			
+<script>
+var groupnavigatorData = [
+
+	
+	{
+		name: "Pediatric Endocrinology Clinical Case Mailing List",
+		url: "https://groups.io/g/peds-endo/topics"
+	},
+	
+
+];
+</script>
+
+
+<!-- Modal Dialog for Autocomplete -->
+<div class="modal fade" id="groupnavigatorModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <input type="text" class="form-control" id="groupnavigatorInput" placeholder="Go to group..." style="margin-bottom:10px">
+        <div id="groupnavigatorContainer" class="autocompleteResults" style="max-height:250px; overflow-y: auto;"></div>
+		<div class="text-center" style="margin-top:10px; font-size:12px;"><i class="fa-sharp fa-arrow-up-arrow-down"></i> to navigate&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-arrow-turn-down-left"></i> to use&nbsp;&nbsp;&nbsp;<strong>esc</strong> to dismiss</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Keep track of the currently selected index
+var selectedIndex = -1;
+
+// Function to highlight the matched substring
+function highlightSubstring(str, substring) {
+  var index = str.toLowerCase().indexOf(substring.toLowerCase());
+  if (index !== -1) {
+    var before = str.substring(0, index);
+    var middle = str.substring(index, index + substring.length);
+    var after = str.substring(index + substring.length);
+    return before + '<span class="autocomplete-highlight">' + middle + '</span>' + after;
+  }
+  return str;
+}
+
+// Function to highlight the selected item and ensure it is visible in the scrollable list
+function highlightSelectedItem(modalName) {
+  var listContainer = document.getElementById(modalName + 'Container');
+  var items = document.getElementsByClassName(modalName + '-list-item');
+  Array.from(items).forEach(function(item, idx) {
+    item.className = idx === selectedIndex ? modalName + '-list-item autocomplete-list-item btn-primary no-hover' : modalName + '-list-item autocomplete-list-item no-hover'; // Apply btn-primary class to the selected item
+  });
+  if (items.length > 0 && selectedIndex >= 0) {
+    var selectedItem = items[selectedIndex];
+    var containerTop = listContainer.scrollTop;
+    var containerBottom = containerTop + listContainer.clientHeight;
+    var itemTop = selectedItem.offsetTop;
+    var itemBottom = itemTop + selectedItem.offsetHeight;
+	const fudge = 59;
+    if (selectedIndex > 0 && itemTop > containerBottom) {
+      // If there are items below the selected item and the selected item is not fully visible, scroll down
+      listContainer.scrollTop = itemTop - listContainer.clientHeight + items[selectedIndex - 1].offsetHeight;
+    } else if (selectedIndex < items.length - 1 && (itemTop - fudge) < containerTop) {
+      // If there are items above the selected item and the selected item is not fully visible, scroll up
+      listContainer.scrollTop = itemTop - fudge - items[selectedIndex + 1].offsetHeight;
+    }
+  }
+}
+
+// function to populate the list based on the input
+function populateList(modalName, data) {
+  var input = document.getElementById(modalName+'Input').value;
+  var listContainer = document.getElementById(modalName+'Container');
+  listContainer.innerHTML = '';
+  data.forEach(function(item) {
+    if (item.name.toLowerCase().includes(input.toLowerCase())) {
+      var div = document.createElement('div');
+      div.innerHTML = highlightSubstring(item.name, input);
+      div.className = modalName+'-list-item autocomplete-list-item no-hover'; // Apply no-hover class
+      div.addEventListener('click', function() {
+        // Navigate to the specified URL when a list item is clicked
+        window.location.href = item.url;
+      });
+      div.addEventListener('mousemove', function() {
+        // Remove no-hover class from all items when the mouse is moved over any item
+		console.log("mouse move");
+        var items = document.getElementsByClassName(modalName+'-list-item');
+        Array.from(items).forEach(function(item) {
+          item.classList.remove('no-hover');
+        });
+      });
+      listContainer.appendChild(div);
+    }
+  });
+  highlightSelectedItem(modalName);
+}
+
+function InitAutocomplete(modalName, data) {
+	// Focus the input field when the modal is shown and populate the list
+	$('#' + modalName + 'Modal').on('shown.bs.modal', function () {
+		$('#' + modalName + 'Input').focus().val('');
+		populateList(modalName, data);
+		selectedIndex = 0;
+		highlightSelectedItem(modalName);
+	});
+
+	// Event listener for input field typing
+	document.getElementById(modalName + 'Input').addEventListener('input', function() {
+		populateList(modalName, data);
+		selectedIndex = 0;
+	});
+
+	// Event listener for arrow keys and enter key
+	document.getElementById(modalName + 'Input').addEventListener('keydown', function(event) {
+		var items = document.getElementsByClassName(modalName + '-list-item');
+		if (event.key === 'ArrowDown') {
+			event.preventDefault();
+			if (selectedIndex < items.length - 1) selectedIndex++;
+			highlightSelectedItem(modalName);
+		} else if (event.key === 'ArrowUp') {
+			event.preventDefault();
+			if (selectedIndex > 0) selectedIndex--;
+			highlightSelectedItem(modalName);
+		} else if (event.key === 'Enter' && selectedIndex >= 0 && selectedIndex < items.length) {
+			event.preventDefault();
+			items[selectedIndex].click();
+		}
+	});
+}
+
+function showAutocompleteModal(modalName) {
+	$('#' + modalName + 'Modal').modal('show');
+	selectedIndex = -1;
+}
+</script>
+
+			<div id="content" class="container-fluid">
+<script>
+	InitAutocomplete("groupnavigator", groupnavigatorData);
+
+	document.body.addEventListener("showReloadPageDialog", function(evt) {
+		console.log("Forced reload");
+		location.reload();
+	});
+
+	function ShowBackButton(label) {
+		var logoElement = document.getElementById("logo");
+		if (logoElement) {
+			html = `
+				<span style="color:#fff;margin-top:14px;margin-left:12px;float:left !important; height:36px;">
+				<a onclick="goBack()" style="color:#fff">
+					<i class="fa-fw fa-solid fa-chevron-left fa-lg"></i>
+				</a></span>`;
+			if (label != "") {
+				html += `<div style="position:absolute;left:50%;transform:translateX(-50%);text-align:center;color:#ecf0f1;margin-top:5px;"><h4>` + label + `</h4></div>`;
+			}
+			logoElement.innerHTML = html;
+		}
+	}
+
+	function HideBackButton() {
+		var logoElement = document.getElementById("logo");
+		if (logoElement) {
+			logoElement.innerHTML = `
+				<a href="https://groups.io" class="navbar-left">
+					<img src="https://groups.io/img/org.1/mainlogo.png?cachebust" height="50" alt="Groups.io">
+				</a>`;
+		}
+	}
+
+	function goBack() {
+		history.back();
+	}
+
+	// submitEvent acts like .submit(), except it is compatible with the app, by using events instead.
+	function submitEvent(ele) {
+		console.log("in submitEvent");
+		if (ele.startsWith('#')) {
+    		ele = ele.slice(1);
+		}
+		document.getElementById(ele).submit();
+		return;
+		/*
+		const theEvent = new CustomEvent('submit', {
+			bubbles: true,
+			cancelable: true
+		});
+		if (typeof ele === 'string' || ele instanceof String) {
+			if (ele.startsWith("#") == true) {
+				ele = ele.slice(1);
+			}
+			if (document.getElementById(ele).dispatchEvent(theEvent) == true) {
+				// if not cancelled, do normal submit
+				console.log("calling submit");
+				document.getElementById(ele).submit();
+			}
+			return;
+		}
+		// assume ele is the element
+		if (ele.dispatchEvent(theEvent) == true) {
+			// if not cancelled, do normal submit
+			console.log("calling submit");
+			ele.submit();
+		}
+		*/
+	}
+
+	// gioDestroy is a convenience function for destroy callbacks
+	function gioDestroy(eventCB) {
+		let internalGioDestroy = function(evt) {
+			// do not activate on infinite scroll events
+			if (evt.detail.target !== undefined && evt.detail.target.id != "maincontent-refresh") {
+				console.log("Ignoring infinite scroll event");
+				return;
+			}
+			console.log("Calling destroy callback");
+			eventCB(evt);
+		}
+		document.body.addEventListener("htmx:beforeSwap", internalGioDestroy, {once: true});
+		document.body.addEventListener("htmx:historyCacheMiss", internalGioDestroy, {once: true});
+	}
+			
+	var drawerCloseFunc = function(evt) {
+		console.log("in drawerCloseFunc");
+		// Find all elements with the class 'drawer'
+		var drawers = document.querySelectorAll('.drawer');
+
+		// Iterate over each element and call closeDrawer() on each
+		drawers.forEach(function(obj) {
+			drawerObj.closeDrawer(obj);
+		});
+		$('.modal').modal('hide');
+	}
+	document.body.addEventListener('htmx:beforeSwap', drawerCloseFunc);
+	document.body.addEventListener('htmx:historyCacheMiss', drawerCloseFunc);
+
+	var keydownFunc = function(event) {
+		var tagName = event.target.tagName.toLowerCase();
+		if (tagName === 'input' || tagName === 'textarea' || event.target.isContentEditable) {
+			if (event.key === 'Escape') {
+				event.target.blur();
+			}
+			return;
+		}
+		// check if the viewimages viewer is up
+		let element = document.getElementById('overlay');
+		if (element && element.classList.contains('visible')) {
+			return;
+		}
+		console.log("HERE: " + event.key + " " + event.ctrlKey + " " + event.shiftKey + " " + event.metaKey);
+		if (event.ctrlKey && event.shiftKey && (event.key === '?' || event.key === '/')) {
+			event.preventDefault(); // Prevent the default action
+			// Show the modal dialog for keyboard shortcuts
+			$('#shortcutModal').modal('show');
+			return;
+		}
+		$('#shortcutModal').modal('hide');
+
+		if (event.key.toLowerCase() === 'g') {
+			// For Windows and Linux
+			if (event.ctrlKey) {
+				event.preventDefault();
+				showAutocompleteModal("groupnavigator");
+				return;
+			}
+		}
+
+		// Check if the pressed key is '/'
+		if ((event.key === 'f' || event.key === 'F') && event.shiftKey) {
+			if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+				if (event.metaKey) {
+					event.preventDefault(); // Prevent the default action
+					// Focus on the search box
+					let box = document.getElementById('searchbox')
+					if (box != null) {
+						document.getElementById('searchbox').focus();
+					}
+				}
+			} else {
+				// For Windows and Linux
+				if (event.ctrlKey) {
+					event.preventDefault(); // Prevent the default action
+					// Focus on the search box
+					let box = document.getElementById('searchbox')
+					if (box != null) {
+						document.getElementById('searchbox').focus();
+					}
+				}
+			}
+		}
+	}
+	document.addEventListener('keydown', keydownFunc);
+	var removeDrawerCloseFunc = function(evt) {
+		document.body.removeEventListener('htmx:beforeSwap', drawerCloseFunc);
+		document.body.removeEventListener('htmx:historyCacheMiss', drawerCloseFunc);
+		document.removeEventListener('keydown', keydownFunc);
+	}
+	document.body.addEventListener("htmx:historyCacheMiss", removeDrawerCloseFunc, {once: true});
+</script>
+<!-- Modal Dialog for Keyboard Shortcuts -->
+<div class="modal fade" id="shortcutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Keyboard Shortcuts</h4>
+      </div>
+      <div class="modal-body">
+		<div class="row">
+			<div class="col-xs-3 text-right"><strong>ctrl</strong> + <strong>shift</strong> + <strong>?</strong>&nbsp;&nbsp;:</div>
+			<div class="col-xs-9" style="margin-left: -23px;">Show all keyboard shortcuts</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 text-right"><strong>ctrl</strong> + <strong>g</strong>&nbsp;&nbsp;:</div>
+			<div class="col-xs-9" style="margin-left: -23px;">Navigate to a group</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 text-right"><strong class="ctrlmeta">ctrl</strong> + <strong>shift</strong> + <strong>f</strong>&nbsp;&nbsp;:</div>
+			<div class="col-xs-9" style="margin-left: -23px;">Find</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 text-right"><strong class="ctrlmeta">ctrl</strong> + <strong>/</strong>&nbsp;&nbsp;:</div>
+			<div class="col-xs-9" style="margin-left: -23px;">Quick actions</div>
+		</div>
+		</div>
+		<div class="text-center" style="margin-top:10px; margin-bottom:10px; font-size:12px;"><strong>esc</strong> to dismiss</div>
+    </div>
+  </div>
+</div>
+
+				
+	
+	<div id="mainrow" class="row"  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})" >
+		<div id="groupsidebar" class="scrollbar hidden-print">
+			<div class="scrollbar-content">
+				<div id="accordion" role="tablist" aria-multiselectable="true" style="margin-bottom:20px;">
+					<div class="list-group noborderlist" style="border:0;margin-bottom:0px">
+						
+
+
+	<a title="Group Home" href="https://groups.io/g/peds-endo" class="list-group-item sidebar-item">
+		<i class="fa-fw fa fa-home fa-lg"></i>
+		Home
+		
+			
+				
+				
+			
+		
+	</a>
+
+	
+		<a href="#submenu0" class="noborderitem list-group-item sidebar-section navbar-vertical dropdown-indicator" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="submenu0">
+			<i class="fa-fw fa fa-pencil-alt fa-lg"></i>
+			Subscription
+		</a>
+		<div class="collapse" id="submenu0">
+			
+
+	<a title="Edit Subscription Settings" href="https://groups.io/g/peds-endo/editsub" id="sidebar-editsub" class="noborderitem list-group-item sidebar-item sidebar-item-editsub">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-pencil-alt fa-lg"></i>
+			Settings
+			<span id="sidebar-editsub-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Group Profile" href="https://groups.io/g/peds-endo//profile/9263642" id="sidebar-profileview" class="noborderitem list-group-item sidebar-item sidebar-item-profileview">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-user fa-lg"></i>
+			Group Profile
+			<span id="sidebar-profileview-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Delivery History" href="https://groups.io/g/peds-endo/subdeliveries" id="sidebar-subdeliveries" class="noborderitem list-group-item sidebar-item sidebar-item-subdeliveries">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-envelope fa-lg"></i>
+			Delivery History
+			<span id="sidebar-subdeliveries-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Integrations" href="https://groups.io/g/peds-endo/subintegrations" id="sidebar-subintegrations" class="noborderitem list-group-item sidebar-item sidebar-item-subintegrations">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-exchange-alt fa-lg"></i>
+			Integrations
+			<span id="sidebar-subintegrations-badge" class="badge"></span>
+		</span>
+	</a>
+
+		</div>
+	
+
+	
+
+	
+		
+	
+		
+
+	<a title="Messages" href="https://groups.io/g/peds-endo/topics?sidebar=true" id="sidebar-archives" class="noborderitem list-group-item sidebar-item sidebar-item-archives active"> 
+		<i class="fa-fw fa fa-comments fa-lg"></i>
+		Messages
+		<span id="sidebar-archives-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="New Topic" href="https://groups.io/g/peds-endo/post" id="sidebar-post" class="noborderitem list-group-item sidebar-item sidebar-item-post"> 
+		<i class="fa-fw fa fa-edit fa-lg"></i>
+		New Topic
+		<span id="sidebar-post-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="Drafts" href="https://groups.io/g/peds-endo/drafts" id="sidebar-drafts" class="noborderitem list-group-item sidebar-item sidebar-item-drafts"> 
+		<i class="fa-fw fa fa-inbox fa-lg"></i>
+		Drafts
+		<span id="sidebar-drafts-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="New Poll" href="https://groups.io/g/peds-endo/addpoll" id="sidebar-addpoll" class="noborderitem list-group-item sidebar-item sidebar-item-addpoll"> 
+		<i class="fa-fw fa fa-chart-bar fa-lg"></i>
+		New Poll
+		<span id="sidebar-addpoll-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="Hashtags" href="https://groups.io/g/peds-endo/hashtags" id="sidebar-hashtags" class="noborderitem list-group-item sidebar-item sidebar-item-hashtags"> 
+		<i class="fa-fw fa fa-hashtag fa-lg"></i>
+		Hashtags
+		<span id="sidebar-hashtags-badge" class="badge"></span>
+	</a>
+
+	
+
+		
+	
+		
+			
+
+	<a title="Chats" href="https://groups.io/g/peds-endo/chats" id="sidebar-chats" class="noborderitem list-group-item sidebar-item sidebar-item-chats"> 
+		<i class="fa-fw fa fa-message-dots fa-lg"></i>
+		Chats
+		<span id="sidebar-chats-badge" class="badge chatbadge"></span>
+	</a>
+
+		
+	
+
+	
+
+	
+
+	
+
+	
+		
+	
+
+	
+		
+
+	<a title="Member Directory" href="https://groups.io/g/peds-endo/directory" id="sidebar-directory" class="noborderitem list-group-item sidebar-item sidebar-item-directory"> 
+		<i class="fa-fw fa fa-users fa-lg"></i>
+		Directory
+		<span id="sidebar-directory-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+
+	<a title="Calendar" href="https://groups.io/g/peds-endo/calendar" id="sidebar-calendar" class="noborderitem list-group-item sidebar-item sidebar-item-calendar"> 
+		<i class="fa-fw fa fa-calendar-alt fa-lg"></i>
+		Calendar
+		<span id="sidebar-calendar-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+			
+
+	<a title="Photos" href="https://groups.io/g/peds-endo/photos" id="sidebar-photos" class="noborderitem list-group-item sidebar-item sidebar-item-photos"> 
+		<i class="fa-fw fa fa-file-image fa-lg"></i>
+		Photos
+		<span id="sidebar-photos-badge" class="badge"></span>
+	</a>
+
+		
+		
+			
+
+	<a title="Files" href="https://groups.io/g/peds-endo/files" id="sidebar-files" class="noborderitem list-group-item sidebar-item sidebar-item-files"> 
+		<i class="fa-fw fa fa-copy fa-lg"></i>
+		Files
+		<span id="sidebar-files-badge" class="badge"></span>
+	</a>
+
+		
+
+		
+			
+
+	<a title="Databases" href="https://groups.io/g/peds-endo/database" id="sidebar-database" class="noborderitem list-group-item sidebar-item sidebar-item-database"> 
+		<i class="fa-fw fa fa-database fa-lg"></i>
+		Databases
+		<span id="sidebar-database-badge" class="badge"></span>
+	</a>
+
+		
+		
+			
+
+	<a title="Donations" href="https://groups.io/g/peds-endo/viewdonations" id="sidebar-viewdonations" class="noborderitem list-group-item sidebar-item sidebar-item-viewdonations" hx-boost="false" hx-disinherit="*"> 
+		<i class="fa-fw fa fa-usd-circle fa-lg"></i>
+		Donations
+		<span id="sidebar-viewdonations-badge" class="badge"></span>
+	</a>
+
+		
+	
+
+	
+		
+
+	<a title="Wiki" href="https://groups.io/g/peds-endo/wiki" id="sidebar-wiki" class="noborderitem list-group-item sidebar-item sidebar-item-wiki"> 
+		<i class="fa-fw fa fa-book fa-lg"></i>
+		Wiki
+		<span id="sidebar-wiki-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+
+			
+
+		
+
+	
+
+					</div>
+				</div>
+				
+	<div class="text-center" style="font-size:13px;margin-bottom:30px">
+		<div style="padding-bottom:10px;">
+			<strong>ctrl</strong> + <strong>shift</strong> + <strong>?</strong> for shortcuts
+		</div>
+		<div style="padding-bottom:5px;">
+			<a href="https://groups.io/static/about">
+				About
+			</a> &middot;
+			<a href="https://groups.io/static/features">
+				Features
+			</a> &middot;
+			<a href="https://groups.io/static/pricing">
+				Pricing
+			</a>
+		</div>
+		<div style="padding-bottom:5px;">
+			<a rel="nofollow" href="https://groups.io/g/updates/messages?expanded=1">
+				Updates
+			</a> &middot;
+			<a href="https://groups.io/static/tos">
+				Terms
+			</a> &middot;
+			<a href="https://groups.io/helpcenter" target="_blank">
+				Help
+			</a>
+		</div>
+		<div style="padding-bottom:5px;">
+			&copy; 2025 Groups.io
+		</div>
+	</div>
+
+			</div>
+		</div>
+		<div id="maincontent" class="groupmaincontent">
+			<div id="maincontent-refresh">
+				<div id="maincontent-column" class="col-xs-12 maincontent-column">
+					
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	<div id="alertdiv"></div>
+	<div class="noticetemplate template">
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">
+					&times;
+				</span>
+			</button>
+			<span class="flashmsg"></span>
+		</div>
+	</div>
+	<div class="alerttemplate template">
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">
+					&times;
+				</span>
+			</button>
+			<span class="flashmsg"></span>
+		</div>
+	</div>
+	<div class="alertnoclosetemplate template">
+		<div class="alert alert-danger" role="alert">
+			<span class="flashmsg"></span>
+		</div>
+	</div>
+
+
+
+ 
+<script>
+function dismiss() {
+    console.log("dismiss");
+    $.get( "/dismissalert");
+}
+
+var $alerttemplate = $(".alerttemplate");
+var $alertnoclosetemplate = $(".alertnoclosetemplate");
+var $noticetemplate = $(".noticetemplate");
+function createAlert(msg, isError, autoClose, noClose) {
+	if (isError == false) {
+		$newPanel = $noticetemplate.clone();
+	} else {
+        if (noClose) {
+		  $newPanel = $alertnoclosetemplate.clone();
+        } else {
+		  $newPanel = $alerttemplate.clone();
+        }
+	}
+	$newPanel.find(".flashmsg").html(msg);
+	if (autoClose == true) {
+		$("#alertdiv").append($newPanel.fadeTo(2000, 500).slideUp(500, function(){
+		    $newPanel.slideUp(500);
+		    $newPanel.remove();
+		}));  	
+	} else {
+		$("#alertdiv").append($newPanel.fadeIn());
+	}
+    return $newPanel;
+}
+
+
+
+
+</script>
+
+
+
+	
+
+	<div class="row breadcrumb-row" style="margin-bottom: 10px">
+		<div class="col-xs-12 col-sm-9">
+			<span class="hidden-sm hidden-md hidden-lg pull-right" style="padding:8px 15px;"><a data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></span>
+			<div class="breadcrumb-container">
+				
+					<ol class="breadcrumb scroll-breadcrumb">
+						<li><a href="https://groups.io/g/peds-endo"><i class="fa fa-home"></i> Peds-Endo</a></li>
+						
+						<li class="active"><i class="fa fa-inbox"></i> Topics</li>
+					</ol>
+				
+			</div>
+		</div>
+		<div class="col-sm-3 hidden-xs" style="padding-right:0px">
+			<form class="form-inline pull-right" method="get" action="https://groups.io/g/peds-endo/search">
+				<input type="hidden" name="p" value="recentpostdate/sticky,,,20,1,0,0">
+				
+				<div class="input-group">
+					<input id="searchbox" type="text" class="form-control" placeholder="Search" title="Search" name="q" size="20" value="" style="height:37px">
+					<div class="input-group-btn">
+						<button class="btn btn-primary" type="submit" style="height:37px;" aria-label="Search">
+							<span class="fa fa-search"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">
+							&times;
+						</span>
+						<span class="sr-only">
+							Close
+						</span>
+					</button>
+					<h4 class="modal-title" id="searchModalLabel">
+						Search
+					</h4>
+				</div>
+				<form class="form-horizontal" method="get" action="https://groups.io/g/peds-endo/search">
+					
+					<div class="modal-body">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" placeholder="Search" title="Search" name="q" value="">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary btn-sm" aria-label="Search">
+							<i class="fa fa-search"></i>
+							Search
+						</button>
+						<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+							<i class="fa fa-times"></i>
+							Cancel
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<div class="row">
+		<div class="col-xs-9 col-sm-6 col-md-6 narrow-padding" style="padding-top:5px;padding-bottom:10px;">
+			<form class="form-inline" id="searchForm" method="get" action="https://groups.io/g/peds-endo/search">
+				<div class="form-group button-link-group">
+					
+					
+	
+		<div class="btn-group" style="display:inline-block">
+	
+			
+				<button id="wide-messages" type="button" class="dropdown-wide btn btn-sm btn-default  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					
+						<i class="fa fa-inbox"></i>
+					
+					Topics
+					
+						<span class="caret"></span>
+					
+				</button>
+			
+			<ul class="dropdown-menu" role="menu">
+				
+					
+						<li>
+							<a title="Messages" href="https://groups.io/g/peds-endo/messages">
+								
+									<i class="fa fa-comments"></i>
+								Messages
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a title="Expanded" href="https://groups.io/g/peds-endo/messages?expanded=1">
+								
+									<i class="fa fa-comments"></i>
+								Expanded
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a title="Polls" href="https://groups.io/g/peds-endo/polls">
+								
+									<i class="fa fa-chart-bar"></i>
+								Polls
+							</a>
+						</li>
+					
+				
+			</ul>
+	</div>
+	<div class="btn-group">
+		
+			<a id="narrow-messages" href="javascript:void(0)" class="dropdown-narrow btn btn-sm btn-default " style="margin-left:-4px;" data-drawer-trigger aria-controls="messages-drawer" aria-expanded="false">
+				
+					<i class="fa fa-inbox"></i>
+				
+				Topics
+				
+					<span class="caret"></span>
+				
+			</a>
+		
+	</div>
+	<section class="drawer drawer-bottom" id="messages-drawer" data-drawer-target>
+		<div class="drawer-overlay" data-drawer-close tabindex="-1"></div>
+		<div class="drawer-wrapper">
+			<div class="drawer-content">
+				<div class="list-group">
+					
+						<a href="#" class="list-group-item disabled" title="Topics">
+							
+								<i class="fa fa-inbox"></i>
+							Topics
+						</a>
+					
+					
+						
+						
+							<a class="list-group-item" title="Messages" href="https://groups.io/g/peds-endo/messages">
+								
+									<i class="fa fa-comments"></i>
+								Messages
+							</a>
+						
+					
+						
+						
+							<a class="list-group-item" title="Expanded" href="https://groups.io/g/peds-endo/messages?expanded=1">
+								
+									<i class="fa fa-comments"></i>
+								Expanded
+							</a>
+						
+					
+						
+						
+							<a class="list-group-item" title="Polls" href="https://groups.io/g/peds-endo/polls">
+								
+									<i class="fa fa-chart-bar"></i>
+								Polls
+							</a>
+						
+					
+				</div>
+			</div>
+		</div>
+	</section>
+<script>
+function modalmessages(target) {
+	drawer = document.getElementById('messages-drawer');
+	if (drawer != null) {
+		drawerObj.closeDrawer(drawer);
+	}
+	$(target).modal('show');
+}
+</script>
+
+					
+					
+	<input type="hidden" name="d" id="dates" value="">
+	<input type="hidden" name="ct" id="ct" value="1">
+	<input type="hidden" name="ev" value="">
+	<div class="btn-group">
+		<button class="btn btn-sm btn-info" type="button" data-toggle="collapse" data-target="#advancedSearch" aria-expanded="false" aria-controls="advancedSearch">
+			Filter
+			<i class="fa fa-filter"></i>
+		</button>
+	</div>
+	<div class="collapse" id="advancedSearch" style="margin-top:10px;">
+
+		
+			<div class="btn-group">
+				<button type="button" class="btn btn-info btn-sm dropdown-toggle bottom10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Hashtags
+					<span class="caret"></span>
+				</button>
+				<ul id="hashtagFilterMenu" class="dropdown-menu scrollable-menu" style="min-width:350px;">
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag62366">
+										<input type="checkbox" class="hashtagcheckbox" id="tag62366" name="tag" value="62366">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#4191d6"></span>
+										#donation-request
+									</label>
+								</div>
+							</li>
+						
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag203256">
+										<input type="checkbox" class="hashtagcheckbox" id="tag203256" name="tag" value="203256">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#4191d6"></span>
+										#dsd
+									</label>
+								</div>
+							</li>
+						
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag63021">
+										<input type="checkbox" class="hashtagcheckbox" id="tag63021" name="tag" value="63021">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#4191d6"></span>
+										#endo_soc_news
+									</label>
+								</div>
+							</li>
+						
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag77344">
+										<input type="checkbox" class="hashtagcheckbox" id="tag77344" name="tag" value="77344">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#4191d6"></span>
+										#poll
+									</label>
+								</div>
+							</li>
+						
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag222690">
+										<input type="checkbox" class="hashtagcheckbox" id="tag222690" name="tag" value="222690">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#4191d6"></span>
+										#poll-notice
+									</label>
+								</div>
+							</li>
+						
+					
+						
+							<li>
+								<div class="checkbox" style="padding-left:20px;padding-right:20px;">
+									<label for="tag123657">
+										<input type="checkbox" class="hashtagcheckbox" id="tag123657" name="tag" value="123657">
+										<span style="display:inline-block;width: 10px;height: 10px;border-radius: 5px;background-color:#61b16c"></span>
+										#survey_type_1_diabetes
+									</label>
+								</div>
+							</li>
+						
+					
+					<li class="divider"></li>
+					<li>
+						<a href="javascript:void(0)" onclick="searchHashtags()" tabIndex="-1">
+							<i class="fa fa-search"></i>
+							Search
+						</a>
+					</li>
+				</ul>
+			</div>
+		
+
+		<div class="btn-group">
+			<button type="button" class="btn btn-info btn-sm dropdown-toggle bottom10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Any Time
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('0'); submitEvent('#searchForm');">
+						Any Time
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('1'); submitEvent('#searchForm');">
+						Past Hour
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('2'); submitEvent('#searchForm');">
+						Past 24 Hours
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('3'); submitEvent('#searchForm');">
+						Past Week
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('4'); submitEvent('#searchForm');">
+						Past Month
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="$('#dates').val('5'); submitEvent('#searchForm');">
+						Past Year
+					</a>
+				</li>
+				<li role="separator" class="divider"></li>
+				<li>
+					<a href="javascript:void(0)" data-toggle="modal" data-target="#customRangeModal">
+						Custom range...
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Custom Range Modal -->
+	<div class="modal fade" id="customRangeModal" tabindex="-1" role="dialog" aria-labelledby="customRangeModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">
+							&times;
+						</span>
+						<span class="sr-only">
+							Close
+						</span>
+					</button>
+					<h4 class="modal-title" id="customRangeModalLabel">
+						Custom Range
+					</h4>
+				</div>
+				<div class="modal-body">
+					Between
+					<input name="startdate" id="startdate" class="form-control" type="text" size="10" placeholder="Start" />
+					and
+					<input name="enddate" id="enddate" class="form-control" type="text" size="10" placeholder="End" />
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary btn-sm" href="javascript:void(0);" onclick="$('#dates').val('6'); $('#searchForm').submit()">
+						<i class="fa fa-check"></i>
+						Go
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	flatpickr("#startdate", { 
+		
+			dateFormat: "m/d/Y",
+		
+	   onChange: function(selectedDates, dateStr, instance) {
+			const enddateFp = document.querySelector("#enddate")._flatpickr;
+			const startdate = moment($('#startdate').val(), 'MM/DD/YYYY h:mma');
+			const enddate = moment($('#enddate').val(), 'MM/DD/YYYY h:mma');
+
+			console.log("startdate:"+ startdate)
+			if (enddate.isBefore(startdate) || $('#enddate').val() == "") {
+				// send endTime to t + 1 hour
+				u = moment(startdate).add(1, 'days');
+				var newenddate = u.format("MM/DD/YYYY");
+				console.log("newenddate:"+ newenddate)
+				enddateFp.setDate(newenddate);
+			}
+    	},
+		static: true
+	});
+	flatpickr("#enddate", { 
+		
+			dateFormat: "m/d/Y",
+		
+	   onChange: function(selectedDates, dateStr, instance) {
+			const startdateFp = document.querySelector("#startdate")._flatpickr;
+			const startdate = moment($('#startdate').val(), 'MM/DD/YYYY h:mma');
+			const enddate = moment($('#enddate').val(), 'MM/DD/YYYY h:mma');
+
+			if (enddate.isBefore(startdate) || $('#startdate').val() == "") {
+				// send endTime to t + 1 hour
+				u = moment(enddate).add(-1, 'days');
+				var newstartdate = u.format("MM/DD/YYYY");
+				console.log("newstartdate:"+ newstartdate)
+				startdateFp.setDate(newstartdate);
+			}
+    	},
+		static: true
+	});
+</script>
+
+				</div>
+			</form>
+		</div>
+		<div class="col-xs-3 col-sm-6 col-md-6 narrow-padding">
+			<form class="form-inline" method="get" action="https://groups.io/g/peds-endo/topics">
+				<div class="pull-right" style="margin-bottom:10px">
+					
+						<a class="button-link" href="https://groups.io/g/peds-endo/topics?dir=desc">
+							Date
+							<i class="fa fa-xs fa-sort-up"></i>
+						</a>
+					
+					&nbsp;&nbsp;
+					
+	
+		<span class="hidden-xs">
+			<span class="form-group">
+			1 - 20 of 13853
+			</span>
+			&nbsp;
+			<ul class="pagination form-group" style="margin: 0px !important;">
+				
+					<li class="disabled">
+						<a href="#">
+							<i class="fa fa-chevron-left">
+								<span class="sr-only">
+									previous page
+								</span>
+							</i>
+						</a>
+					</li>
+				
+				
+					<li>
+						<a href="https://groups.io/g/peds-endo/topics?page=2&after=986476908000000000&dir=asc">
+							<i class="fa fa-chevron-right">
+								<span class="sr-only">
+									next page
+								</span>
+							</i>
+						</a>
+					</li>
+				
+			</ul>
+		</span>
+	
+
+				</div>
+			</form>
+		</div>
+	</div>
+	<table id="records" class="table table-condensed table-fixed" hx-disinherit="*">
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/gene_testing_for/37896296">gene testing for hyperphosphatasia</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Dear colleagues I have three sibling- patients with hyperphosphatasia. What is interesting about them that they are all girls. Is there anybody who is interested in looking genes for these patients. thanks Behzat Ozkan Assoc. Prof of Pediatric Endocrinology Ataturk University Erzurum, Turkey bozkan@... behzatozkan@...</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										behzat özkan
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896296">
+	$('#timedisptopic37896296').replaceWith(DisplayShortTime(984848235000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/suscribe/37896220">suscribe</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">suscribe</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Javier Aisenberg
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896220">
+	$('#timedisptopic37896220').replaceWith(DisplayShortTime(985980695000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/first_message_new_list/37896216">first message - new list</a>
+								
+									<span class="hashtag-position label label-primary" style="font-size:11.25px;">3</span>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">this is a test of the new mailing list. we have 88 members now, and counting. -dennis brenner</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Dennis Brenner
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896216">
+	$('#timedisptopic37896216').replaceWith(DisplayShortTime(985979864000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+								&middot;
+								Most recent
+								@
+								
+<script id="timedisptopic-recent37896216">
+	$('#timedisptopic-recent37896216').replaceWith(DisplayShortTime(985985085000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/no_subject/37896224">(No subject)</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">subscribe</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+  
+	
+    Rohn, Reuben M.D.
+	
+
+								
+							
+							@
+							
+<script id="timedisptopic37896224">
+	$('#timedisptopic37896224').replaceWith(DisplayShortTime(985991392000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/no_subject/37896225">(No subject)</a>
+								
+									<span class="hashtag-position label label-primary" style="font-size:11.25px;">2</span>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">subscribe</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										tumna@...
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896225">
+	$('#timedisptopic37896225').replaceWith(DisplayShortTime(986114190000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+								&middot;
+								Most recent
+								@
+								
+<script id="timedisptopic-recent37896225">
+	$('#timedisptopic-recent37896225').replaceWith(DisplayShortTime(986137044000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/welcome_to_peds_endo/37896228">Welcome to peds-endo</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">peds-endo Moderator wrote:</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Supawadee
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896228">
+	$('#timedisptopic37896228').replaceWith(DisplayShortTime(986200627000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/testing/37896232">Testing</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Apologies to the group, testing whether this is in my system properly so I can just click on the address to send a &quot;to everybody&quot; note.</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Martin Draznin
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896232">
+	$('#timedisptopic37896232').replaceWith(DisplayShortTime(986225396000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/test/37896234">test</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">-- Mohamed El Kholy MD</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Dr.Mohamed El Kholy
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896234">
+	$('#timedisptopic37896234').replaceWith(DisplayShortTime(986225799000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/test/37896237">test</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Only to test the new peds-endo list</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+  
+	
+    francesco.prisco@...
+	
+
+								
+							
+							@
+							
+<script id="timedisptopic37896237">
+	$('#timedisptopic37896237').replaceWith(DisplayShortTime(986227310000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/getting_rid_of_the_ads_on_the/37896241">Getting rid of the ads on the list.</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">It will cost us $60 per year to get rid of the ads on the list. I figure there are 2 ways to do this: 1. Having one of the corporate representatives on the list get their company to donate the $60 (of course that would not give them any control over the list or anything like that). or 2. maybe 6 people will contribute $10 each?? I will pony up the first $10 if we go that route. In either case, if anyone is interested in helping out with this, email me PRIVATELY at db999@... (do not post it to the whole list). Thanks -Dennis Brenner, M.D.</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Dennis Brenner
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896241">
+	$('#timedisptopic37896241').replaceWith(DisplayShortTime(986263481000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/hypoglycemia/37896242">Hypoglycemia</a>
+								
+									<span class="hashtag-position label label-primary" style="font-size:11.25px;">2</span>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Dear Colleagues; Any ideas, I have a new born now 3 weeks of age with severe hypoglycemia. Infant was born full term, NPLD, mother without history of illness or diabetes, use of oral hypoglycmic agents or other meds. The infant, off meds, has glucose values repeatedly in the low teens; requires 16 mg/kg/min to maintain glucose. With Diazoxide 20 mg/kg/day given in 4 divided doses did better initially with a drop in infusion rate to 6 mg/kg/min. However with time, this has increased again and the infant has had multiple episodes with low glucose to &lt;20 mg/dl. Now on hydrocortisone to prevent severe drops with Diazoxide but still a problem. Physical exam normal, no hepatomegly. Insulin levels all low &lt; 10 with hypoglycemia. GH, Cortisol, organic acids, AA, cholesterol, uric acid, lytes, acid/base status, all normal. Does not have umbilical artery line. Pending: prolinsulin, c-peptide and IGF II (renal ultrasound and pancreatic ultrasound normal). With current treatment most glucose values above 90 mg/dl but on occasion will have a sudden drop. Have considered octreotide but without elevated insulin, not sure yet if this would be beneficial. Any thoughts????? Bill</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										William Zipf
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896242">
+	$('#timedisptopic37896242').replaceWith(DisplayShortTime(986302082000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+								&middot;
+								Most recent
+								@
+								
+<script id="timedisptopic-recent37896242">
+	$('#timedisptopic-recent37896242').replaceWith(DisplayShortTime(986309623000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/thanks/37896246">Thanks</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">I want to thanks Alan Klein for the old list which was very helpful and interesting for many years.... and thanks also for Dennis Brenner for the new pediatric endocrinology mailing list wishing all the best for this list Mohamed El Kholy MD</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Dr.Mohamed El Kholy
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896246">
+	$('#timedisptopic37896246').replaceWith(DisplayShortTime(986312101000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/47_xxy_non_klinefelter_ais/37896249">47, XXY Non-Klinefelter AIS?</a>
+								
+									<span class="hashtag-position label label-primary" style="font-size:11.25px;">2</span>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Hello: Does anyone have clinical experience with patient(s) with Complete Androgen Insensitivity Syndrome and a 47, XXY karyotype rather than 46, XY? I was not aware of a 47, XXY karyotype other than in Klinefelter Syndrome. Moreover, I would have thought that 47, XXY would be inconsistent with AIS because the presence of an AR gene mutation on one of the X&#39;s would be compensated for by the other X, similar to a 46, XX carrier. I could understand AIS occurring in XY/XO mosaicism, but do not understand how it occurs in XXY. Nonetheless, there are at least two articles suggesting otherwise: Gerli, M.; Migliorini, G.; Bocchini, V.; Venti, G.; Ferrarese, R.; Donti, E.; Rosi, G. : A case report of complete testicular feminization and 47,XXY karyotype. J. Med. Genet. 16: 480-483, 1979. PubMed ID : &lt;A HREF=&quot;http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query_old?db=m&amp;form=6&amp;uid=575389&amp;dopt=r&quot;&gt;575389&lt;/A&gt; German, J.; Vesell, M. : Testicular feminization in monozygotic twins with 47 chromosomes (XXY). Ann. Genet. 9: 5-8, 1966. PubMed ID : &lt;A HREF=&quot;http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query_old?db=m&amp;form=6&amp;uid=5295702&amp;dopt=r&quot;&gt;5295702&lt;/A&gt; I am concurrently addressing this issue with a few geneticists, but would like to know whether anyone on the Board has clinical experience with 47, XXY individuals who present with CAIS phenotype. On a somewhat related note, but again something perhaps more appropriate for geneticists, given the possible fertility of someone with low-grade AIS (Quigley Scale 1 or 2), is it therefore not theoretically possible for such 46, XY individual to father a 46, XX child who has AIS if the mother is a 46, XX carrier? Is anyone aware of such case being reported in literature? Any thoughts are greatly appreciated. Sherri Groveman Founder, AIS Support Group USA</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										sgroveman@...
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896249">
+	$('#timedisptopic37896249').replaceWith(DisplayShortTime(986301591000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+								&middot;
+								Most recent
+								@
+								
+<script id="timedisptopic-recent37896249">
+	$('#timedisptopic-recent37896249').replaceWith(DisplayShortTime(986319095000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/lipoatrophy/37896254">Lipoatrophy</a>
+								
+									<span class="hashtag-position label label-primary" style="font-size:11.25px;">4</span>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">I have a 10 yo girl with Type 1 DM for 5 years. From the beginning she has had significant lipoatrophy, first on humulin regular and now even worse on Humalog. She will no longer wear shorts or a Bikinni beacause of the disfiguration. I am going to try switching to a pump. Injections into the site in the past did not help. Avoiding the sites has not helped either over the past year. Any ideas will be greatly appreciated. Thanks, Jerry Olshan The Barbara Bush Children&#39;s Hospital Portland, ME</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+  
+	
+    Jerry Olshan
+	
+
+								
+							
+							@
+							
+<script id="timedisptopic37896254">
+	$('#timedisptopic37896254').replaceWith(DisplayShortTime(986325390000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+								&middot;
+								Most recent
+								@
+								
+<script id="timedisptopic-recent37896254">
+	$('#timedisptopic-recent37896254').replaceWith(DisplayShortTime(986330316000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/history_of_endocrinology/37896268">History of Endocrinology</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">This came to one of my autism lists that is now inactive, but the archives remain open. I thought it might be of interest to this group. Ricci Hedequist SOAR</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Wutsername@...
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896268">
+	$('#timedisptopic37896268').replaceWith(DisplayShortTime(986330390000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/re_hypoglycaemia/37896261">re hypoglycaemia</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Remember to check an ammonia (see ref below). The most practical ref I used recently is also below. Barry Taylor Paediatrics and Child Health Aynsley-Green, A., K. Hussain, et al. (2000). &quot;Practical management of hyperinsulinism in infancy.&quot; Arch Dis Child Fetal Neonatal Ed 82(2): F98-F107. Hyperinsulinism in infancy is one of the most difficult problems to manage in contemporary paediatric endocrinology. Although the diagnosis can usually be achieved without difficulty, it presents the paediatrician with formidable day to day management problems. Despite recent advances in understanding the pathophysiology of hyperinsulinism, the neurological outcome remains poor, and there is often a choice of unsatisfactory treatments, with life long sequelae for the child and his or her family. This paper presents a state of the art overview on management derived from a consensus workshop held by the European network for research into hyperinsulinism (ENRHI). The consensus is presented as an educational aid for paediatricians and children&#39;s nurses. It offers a practical guide to management based on the most up to date knowledge. It presents a proposed management cascade and focuses on the clinical recognition of the disease, the immediate steps that should be taken to stabilise the infant during diagnostic investigations, and the principles of definitive treatment. Miki, Y., T. Taki, et al. (2000). &quot;Novel missense mutations in the glutamate dehydrogenase gene in the congenital hyperinsulinism-hyperammonemia syndrome.&quot; J Pediatr 136(1): 69-72. OBJECTIVES: The objectives of this study were to clarify the involvement of the glutamate dehydrogenase gene in congenital hyperinsulinemia-hyperammonemia syndrome (CHHS) and the relationships between the mutation of the gene and clinical severity. STUDY DESIGN: Five unrelated Japanese patients (3 girls and 2 boys) with CHHS were investigated. All patients had convulsions or loss of consciousness resulting from hypoglycemia at less than 1 year of age. We examined mutations of the glutamate dehydrogenase gene using genomic or reverse- transcriptase polymerase chain reactions, followed by direct sequencing. RESULTS: We identified heterozygous missense mutations in all patients. Three patients had a previously identified mutation (C-- &gt;T at nt 1506) at codon 445 in the allosteric domain. Two novel missense mutations were identified in the other patients. These mutations included a change of A--&gt;C at nt 1059 and a change of G--&gt;A at nt 966, within the catalytic domain of the glutamate dehydrogenase gene. The locus of the mutations was not associated with the severity of hypoglycemia. CONCLUSIONS: Our results suggest that structural aberrations of not only the allosteric domain but also the catalytic domain of the glutamate dehydrogenase protein, caused by missense mutations, can result in the development of CHHS.</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Barry Taylor
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896261">
+	$('#timedisptopic37896261').replaceWith(DisplayShortTime(986330430000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/diabetes_and_lipoatrophy/37896265">diabetes and lipoatrophy</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">I sent out incorrect information about Elif Arioglu&#39;s protocol at the NIH. I read &quot;lipoatrophy&quot; but registered &quot;lipodystrophy&quot;. Her leptin protocol is for lipodystrophy and diabetes due to insulin resistance. Sorry!!! Ellen Leschek NIH</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+  
+	
+    Leschek, Ellen (NICHD)
+	
+
+								
+							
+							@
+							
+<script id="timedisptopic37896265">
+	$('#timedisptopic37896265').replaceWith(DisplayShortTime(986333215000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/another_try_history_of/37896271">Another try....History of Endocrinology Message</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Apparently only my comments, but not the message I tried to forward earlier, was distributed to the list. I did a cut/paste of the message as it was originally sent to me and I&#39;m resubmitting it to the peds-endo list (below). I am guessing that due to the previous virus problem the list moderator has set this list to not allow attachments, therefore messages cannot be directly forwarded. Apologies for the earlier post which might have been confusing. Kind regards, Ricci Hedequist SOAR Forwarded message: Hi! Could you please help us and spread this &#39;call for papers&#39;? Thanks so much! Wolf (in Heidelberg) ====================== Hormons and Communication - International Symposium on the History of Hormons in 20th Century Medical Research and Society Heidelberg, 21-23 March 2002 Organisation: Prof. Dr. Wolfgang U. Eckart (Heidelberg), Prof. Dr. Wolfgang E. Merz (Heidelberg) First call for papers: During the 20th century the history of endocrinology took a rapid and rather successful course in medical research as well as in the daily clinical routine, its antecedents dating far back to the 19th century. &quot;A History of endocrinology&quot; (1982) and &quot;The History of clinical endocrinology&quot; (1993) by Victor Medveis give a problem orientated survey whereas the history of endocrinology and medicine of reproduction &quot;Zur Geschichte der Endokrinologie und Reproduktionsmedizin&quot;, edited by Gerhard Bettendorf in 1995, has mainly a tendency to biography. Exceeding the mere event and biographically orientated history of hormonology has to look for new historiographical problems. Nowadays, endocrinology is the unparalleled science of biological communication and does imply multiple overlaps with the neuro sciences. Thus, it is tempting to focus on the communicative function of hormones under historical aspects (i.e. intrapersonal, interpersonal, social, and interdisciplinary) in the sense of a historical inventory of the 20th century hormonology. Out of the enormous range of the subjects in question the following issues can simply be regarded as examples: &quot;The Dawn of a Discipline&quot;: Early international hormonology and communication between researchers and research groups &quot;Hermes between the Organs&quot;: Hormones and interorganic communication - from model to observation &quot;Laboratory, Hospital, Industry&quot;: Hormones between laboratory research, clinical experimentation, and industrial production - ways of communication and interaction &quot;Puberty, Pregnancy, Climacteric Changes&quot;: Hormones and the female/male body perception &quot;Myth and Power of the Glands&quot;: Public and hidden discours on hormons, sex, and normality &quot;Hormon research and political power&quot;: Hormonal experiments without ‚informed consent&#39; &quot;Between scientific discourse and popular metaphor&quot;: Hormones in press and literature We would cordially invite you to contribute to the conference. Please submit title and abstract (200 words max.) or direct any question to: Ruprecht-Karls-Universität Institut für Geschichte der Medizin &quot;Hormons and Communication&quot; Im Neuenheimer Feld 327 D-69120 Heidelberg GERMANY or mail directly to: wolfgang.eckart@... or wolfgang.merz@... Proposals should be received no later than June 1, 2001. The Program Committee will contact all contributers shortly thereafter.</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										Wutsername@...
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896271">
+	$('#timedisptopic37896271').replaceWith(DisplayShortTime(986338575000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/subscribe/37896272">subscribe</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">subscribe</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										ocrant2000@...
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896272">
+	$('#timedisptopic37896272').replaceWith(DisplayShortTime(986408051000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+			
+	<tr >
+		<td  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})"  >
+			<div style="margin-top:3px;margin-bottom:3px;">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						
+						
+						
+						
+							<span class="subject">
+								<a class="showvisited subject" href="https://groups.io/g/peds-endo/topic/categories_of_cho_metabolism/37896274">categories of CHO metabolism</a>
+								
+								
+							</span>
+						
+								
+
+						
+							
+								<div class="truncate-one-line">
+									<div  tabindex="0">Greetings all. I have a question(s) for the group. I understand the categories of CHO metabolism described by the Expert Committee on the Diagnosis and Classification of Diabetes Mellitus (e.g., normal, IFG, IGT, DM). Are the 1/2 hour and 1 hour glucoses on an OGTT used at all? I understand that clinically the 2 hour post-prandial glucose is the main one. Can the 1/2 and 1 hour sugars be used to better understand where a given patient might fall on this spectrum of CHO metabolism disorders? How might (are) these sugars be used in research? Just trying to complete my understanding of the spectrum of diseases...thanks for your input. Darrell Nesmith, MD</div>
+								</div>
+							
+						
+
+
+						<span class="thread-attribution">
+							Started by
+							
+								
+									
+										d-
+									
+								
+							
+							@
+							
+<script id="timedisptopic37896274">
+	$('#timedisptopic37896274').replaceWith(DisplayShortTime(986476908000000000, false
+		,"America/Santiago","MM/DD/YY","h:mma"));
+</script>
+
+							
+							
+						</span>
+						
+					</div>
+					</div>
+					</div>
+				</td>
+			</tr>
+
+		
+	</table>
+	<form class="form" method="POST" action="https://groups.io/g/peds-endo/domerge">
+		
+			<input type="hidden" name="csrf" value="1574689661976368710">
+		
+		<input type="hidden" name="threadid" id="threadid" value="0">
+		<!-- Verify Merge Modal -->
+		<div class="modal fade" id="mergeThreadModal" tabindex="-1" role="dialog" aria-labelledby="mergeThreadModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">
+								&times;
+							</span>
+							<span class="sr-only">
+								Close
+							</span>
+						</button>
+						<h4 class="modal-title" id="mergeThreadModalLabel">
+							Verify Merge
+						</h4>
+					</div>
+					<div class="modal-body">
+						Are you sure you wish to merge the topic '' into the topic '<span id="subject">Action</span>'?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+							<i class="fa fa-times"></i>
+							Cancel
+						</button>
+						<button class="btn btn-primary btn-sm" name="merge" value="1">
+							<i class="fa fa-compress"></i>
+							Yes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="row" style="margin-bottom:20px;">
+		<div class="col-xs-12">
+			
+	
+		<div class="pull-right form-inline">
+			<span class="form-group">
+				1 - 20 of 13853
+			</span>
+			&nbsp;
+			<ul class="pagination form-group" style="margin: 0px !important;vertical-align:middle;">
+				
+					<li class="disabled">
+						<a href="#">
+							<i class="fa fa-chevron-left">
+								<span class="sr-only">
+									previous page
+								</span>
+							</i>
+						</a>
+					</li>
+				
+				
+					
+						<li class="hidden-xs disabled">
+							<a class="currentpage" href="#">
+								1
+							</a>
+						</li>
+					
+				
+					
+						<li class="hidden-xs">
+							<a rel="nofollow" href="https://groups.io/g/peds-endo/topics?page=2&dir=asc">
+								2
+							</a>
+						</li>
+					
+				
+					
+						<li class="hidden-xs">
+							<a rel="nofollow" href="https://groups.io/g/peds-endo/topics?page=3&dir=asc">
+								3
+							</a>
+						</li>
+					
+				
+					
+						<li class="hidden-xs">
+							<a rel="nofollow" href="https://groups.io/g/peds-endo/topics?page=4&dir=asc">
+								4
+							</a>
+						</li>
+					
+				
+					
+						<li class="hidden-xs">
+							<a rel="nofollow" href="https://groups.io/g/peds-endo/topics?page=5&dir=asc">
+								5
+							</a>
+						</li>
+					
+				
+				
+					<li>
+						<a href="https://groups.io/g/peds-endo/topics?page=2&after=986476908000000000&dir=asc">
+							<i class="fa fa-chevron-right">
+								<span class="sr-only">
+									next page
+								</span>
+							</i>
+						</a>
+					</li>
+				
+			</ul>
+		</div>
+	
+
+		</div>
+	</div>
+	<!-- Verify Remove Modal -->
+	<form class="form-horizontal" id="delModalForm" method="POST" action="https://groups.io/g/peds-endo/editthread">
+		<input type="hidden" name="tid" id="delthreadid" value="">
+		
+			<input type="hidden" name="csrf" value="1574689661976368710">
+		
+		<div class="modal fade" id="deleteThreadModal" tabindex="-1" role="dialog" aria-labelledby="deleteThreadModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">
+								&times;
+							</span>
+							<span class="sr-only">
+								Close
+							</span>
+						</button>
+						<h4 class="modal-title" id="deleteThreadModalLabel">
+							Verify Delete
+						</h4>
+					</div>
+					<div class="modal-body">
+						Are you sure you wish to delete this topic? This cannot be undone.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+							<i class="fa fa-times"></i>
+							Cancel
+						</button>
+						<button class="btn btn-danger btn-sm" name="delthread" value="1">
+							<i class="fa fa-trash-alt"></i>
+							Yes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- View Image Modal -->
+	
+    <div class="viewer-overlay" id="overlay">
+        <div class="viewer-overlay-controls">
+            <i class="fa-regular fa-2x fa-arrow-down-to-line" id="downloadImage" style="margin-left: 20px;color: #FFF;cursor: pointer;"></i>
+            <i class="fa-regular fa-2x fa-times" id="closeOverlay" style="margin-left: 20px;color: #FFF;cursor: pointer;"></i>
+        </div>
+        <div class="viewer-image-container">
+            <i class="fa-regular fa-2x fa-chevron-left viewer-arrow" id="prevImage" style="left:-35px;color: #FFF;cursor: pointer;"></i>
+            <img id="currentImage" src="" alt="Current Image">
+            <i class="fa-regular fa-2x fa-chevron-right viewer-arrow" id="nextImage" style="right:-35px;color: #FFF;cursor: pointer;"></i>
+        </div>
+        <div class="viewer-image-info">
+            <b>Image Name</b><br>
+            Sat 8:39am
+        </div>
+		<div class="viewer-thumbnail-outer-container" id="thumbnailOuterContainer">
+			<div class="viewer-thumbnail-container" id="thumbnailContainer"></div>
+		</div>
+    </div>
+
+
+<script>
+contentLoaded(false, function() {
+	UpdateSidebar("archives");
+
+	
+
+const ViewImages = (function() {
+  // Private variables
+  let imageURLs = [];
+  let currentImageIndex = 0;
+
+  // Private functions
+  function updateImage() {
+      const currentImage = imageURLs[currentImageIndex];
+      document.getElementById('currentImage').src = currentImage.url;
+	  const imageInfo = document.querySelector('.viewer-image-info');
+      imageInfo.innerHTML = `<b>${currentImage.name}</b><br>${currentImage.date}`;
+      document.querySelectorAll('.viewer-thumbnail').forEach(function(thumb, index) {
+        thumb.classList.remove('selected');
+        if (index === currentImageIndex) {
+          thumb.classList.add('selected');
+        }
+      });
+      scrollThumbnailsToCenter();
+  }
+
+  function scrollThumbnailsToCenter() {
+      const outerContainer = document.getElementById('thumbnailOuterContainer');
+      const container = document.getElementById('thumbnailContainer');
+      const selectedThumb = document.querySelector('.viewer-thumbnail.selected');
+
+      const scrollLeft = -1*(selectedThumb.offsetLeft - outerContainer.offsetWidth / 2 + selectedThumb.offsetWidth / 2);
+      console.log("offset: " + selectedThumb.offsetLeft);
+	  console.log("outerContainer width: " + outerContainer.offsetWidth);
+	  console.log("container width: " + container.offsetWidth);
+	  console.log("image width: " + selectedThumb.offsetWidth);
+	  scroll = scrollLeft + "px"
+	  console.log("scrollLeft: " + scroll);
+      $('#thumbnailContainer').css({left:scroll}).animate({'left': scroll}, 500);
+  }
+
+	let viewerTouchStartX = 0;
+	let viewerTouchEndX = 0;
+
+  function viewerHandleTouchStart(event) {
+	console.log("viewerHandleTouchStart");
+	viewerTouchStartX = event.changedTouches[0].clientX;
+  }
+
+  function viewerHandleTouchEnd(event) {
+		console.log("viewerHandleTouchEnd");
+		viewerTouchEndX = event.changedTouches[0].clientX;
+		handleSwipe();
+  }
+
+  function handleSwipe() {
+		if (viewerTouchEndX < viewerTouchStartX) {
+			// Swipe left
+			if (currentImageIndex < imageURLs.length - 1) {
+				currentImageIndex = currentImageIndex + 1;
+				updateImage();
+			}
+		}
+		if (viewerTouchEndX > viewerTouchStartX) {
+			// Swipe right
+			if (currentImageIndex > 0) {
+				currentImageIndex = currentImageIndex - 1;
+				updateImage();
+			}
+		}
+  }
+
+  // Public functions
+  function View(dataId, index) {
+		event.preventDefault();  // Stop the default action
+
+		// Find the parent msgpayload element using the data-id
+		let msgPayloadElement = document.getElementById(`msgpayload-${dataId}`);
+
+		// Find all image elements within the msgpayload element
+
+		imageURLs = [];
+		currentImageIndex = index;
+		// Loop through each image element and push its src attribute to the imageURLs array
+		let imageElements = msgPayloadElement.querySelectorAll('[data-image-url]');
+		imageElements.forEach(function(img) {
+			let imgObj = new Object;
+			imgObj.url = img.getAttribute('data-image-url');
+			imgObj.name = img.getAttribute('data-image-name');
+			imgObj.date = img.getAttribute('data-image-date');
+			imageURLs.push(imgObj);
+		});
+
+		const thumbnailContainer = document.getElementById('thumbnailContainer');
+		thumbnailContainer.innerHTML = '';
+		imageURLs.forEach((image, i) => {
+			const thumbnail = document.createElement('img');
+			thumbnail.className = 'viewer-thumbnail thumbnail';
+			thumbnail.src = image.url;
+			thumbnail.style.display = "inline-table";
+			thumbnail.addEventListener('click', function() {
+				currentImageIndex = i;
+				updateImage();
+			});
+			thumbnailContainer.appendChild(thumbnail);
+		});
+		if (imageURLs.length == 1) {
+			// hide arrows
+			document.getElementById('prevImage').style.display = 'none';
+			document.getElementById('nextImage').style.display = 'none';
+		}
+		document.getElementById('overlay').classList.add('visible');
+		updateImage();
+		// Now you have an array of image URLs
+		console.log(imageURLs);
+  }
+
+  function Destroy() {
+    // Cleanup code, remove event listeners, etc.
+	console.log("ViewImages destroy");
+    let ele = document.getElementById('downloadImage')
+	if (ele == null) {
+		return;
+	}
+    ele.removeEventListener('click', downloadImageClickHandler);
+    document.getElementById('closeOverlay').removeEventListener('click', closeOverlayClickHandler);
+    document.getElementById('nextImage').removeEventListener('click', nextImageClickHandler);
+    document.getElementById('prevImage').removeEventListener('click', prevImageClickHandler);
+    document.getElementById('currentImage').removeEventListener('touchstart', viewerHandleTouchStart);
+    document.getElementById('currentImage').removeEventListener('touchend', viewerHandleTouchEnd);
+    document.removeEventListener('keyup', keyupHandler);
+	document.getElementById('prevImage').style.display = 'block';
+	document.getElementById('nextImage').style.display = 'block';
+  }
+
+  // Initialize event listeners
+  document.getElementById('downloadImage').addEventListener('click', downloadImageClickHandler);
+
+
+	function downloadImageClickHandler() {
+	    saveImage();
+	}
+
+   async function saveImage() {
+      // Get the image element
+      const imageElement = document.getElementById('myImage');
+
+      // Fetch the image
+      const response = await fetch(imageURLs[currentImageIndex].url);
+      const blob = await response.blob();
+
+      // Create an anchor element
+      const a = document.createElement('a');
+
+      // Create a URL for the blob
+      const url = URL.createObjectURL(blob);
+
+      // Set the href attribute to the blob URL
+      a.href = url;
+
+      // Set the download attribute to specify the file name
+      a.download = imageURLs[currentImageIndex].name;
+
+      // Append the anchor to the DOM (this part is necessary for Firefox)
+      document.body.appendChild(a);
+
+      // Trigger the download
+      a.click();
+
+      // Release the blob URL
+      URL.revokeObjectURL(url);
+
+      // Remove the anchor from the DOM
+      document.body.removeChild(a);
+	}
+
+  document.getElementById('closeOverlay').addEventListener('click', closeOverlayClickHandler);
+
+  function closeOverlayClickHandler() {
+    document.getElementById('overlay').classList.remove('visible');
+  }
+
+  document.getElementById('nextImage').addEventListener('click', nextImageClickHandler);
+
+  function nextImageClickHandler() {
+    currentImageIndex = (currentImageIndex + 1) % imageURLs.length;
+    updateImage();
+  }
+
+  document.getElementById('prevImage').addEventListener('click', prevImageClickHandler);
+
+  function prevImageClickHandler() {
+    currentImageIndex = (currentImageIndex - 1 + imageURLs.length) % imageURLs.length;
+    updateImage();
+  }
+
+  document.addEventListener('keyup', keyupHandler);
+  function keyupHandler(e) {
+    if (e.key === 'Escape') {
+	  let ele = document.getElementById('overlay');
+	  if (ele != null) {
+	      ele.classList.remove('visible');
+	  }
+    }
+  }
+
+  // Attach touch events
+  document.getElementById('currentImage').addEventListener('touchstart', viewerHandleTouchStart);
+  document.getElementById('currentImage').addEventListener('touchend', viewerHandleTouchEnd);
+
+  return {
+    View,
+    Destroy
+  };
+})();
+
+
+	window.ViewImages = ViewImages.View;
+
+	gioDestroy(function(evt) {
+		window.ViewImages = null;
+		ViewImages.Destroy();
+	});
+
+  $('.hashtagcheckbox').change(function() {
+      let el = $(this);
+      switch(el.data('checked')) {
+        // checked, going indeterminate
+        case 0:
+        console.log("case 0");
+            el.data('checked',1);
+            el.prop('indeterminate',true);
+            break;
+
+        // indeterminate, going unchecked
+        case 1:
+        console.log("case 1");
+            el.data('checked',2);
+            el.prop('indeterminate',false);
+            el.prop('checked',false);
+            break;
+
+        // checked, going unchecked
+        default:
+        console.log("case default");
+            el.data('checked',0);
+            el.prop('indeterminate',false);
+            el.prop('checked',true);
+      }
+  });
+  // prevent dropdown closure on clicking checkbox labels
+	$('#hashtagFilterMenu').on('click', function (e) {
+		e.stopPropagation();
+	});
+	$('#filterdropdown').on('hide.bs.dropdown', function (e) {
+		console.log("HIDE DROPDOWN!");
+		
+			
+			$("#tag62366").prop('checked', false);
+			
+		
+			
+			$("#tag203256").prop('checked', false);
+			
+		
+			
+			$("#tag63021").prop('checked', false);
+			
+		
+			
+			$("#tag77344").prop('checked', false);
+			
+		
+			
+			$("#tag222690").prop('checked', false);
+			
+		
+			
+			$("#tag123657").prop('checked', false);
+			
+		
+	});
+
+	$(".modal").on('shown.bs.modal', function () {
+		$(this).find("input:visible:first").focus();
+	});
+
+
+
+	$("[data-toggle='tooltip']").tooltip();
+	setPullToRefresh();
+
+})
+
+function searchHashtags() {
+	var cbs = document.getElementsByTagName('input');
+	for(var i=0; i < cbs.length; i++) {
+		if(cbs[i].indeterminate == true) {
+		$('<input>').attr({
+			type: 'hidden',
+			name: 'exclude',
+			value: cbs[i].value,
+		}).appendTo('#searchForm');
+		}
+	}
+	submitEvent('#searchForm');
+}
+function setupInto(threadid, subject) {
+  $("#subject").replaceWith("<span id=\"subject\">" + subject + "</span>");
+  $('#threadid').val(threadid);
+}
+$('#mergeThreadModal').on('show.bs.modal', function(event) {
+	var button = $(event.relatedTarget) // Button that triggered the modal
+	var subject = button.data('subject') // Extract info from data-* attributes
+	var threadid = button.data('threadid') // Extract info from data-* attributes
+	$("#subject").replaceWith("<span id=\"subject\">" + subject + "</span>");
+	$('#threadid').val(threadid);
+})
+$('#deleteThreadModal').on('show.bs.modal', function(event) {
+	var button = $(event.relatedTarget) // Button that triggered the modal
+	var threadid = button.data('threadid') // Extract info from data-* attributes
+	$('#delthreadid').val(threadid);
+})
+
+function setupDeleteModal(threadid) {
+  console.log("in setupDeleteModal")
+}
+
+function showElement(isTruncated) {
+	this.style.display = 'block';
+}
+
+</script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row hidden-print" id="mobileSidebar"  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})" >
+		<div id="mobileSidebarSub" class="col-xs-12 hidden-md hidden-lg">
+			<div class="navbar navbar-default navbar-fixed-bottom">
+				<div class="container" style="display: flex; justify-content: space-around;">
+					
+						
+	
+		
+	
+	<div id="mobilesidebar-archives" class="mobilesidebar-item" style="margin-top:10px; padding-bottom:20px; flex: 1; text-align: center;" hx-get="https://groups.io/g/peds-endo/topics?sidebar=true"  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})" >
+		<div style="display: inline-block; position: relative;">
+			<div style="position: relative;display: inline-block;">
+			<i class="fa-fw fa-solid fa-comments fa-2x"></i>
+			
+			</div><br>
+			<span style="font-size:12px;">Messages</span>
+		</div>
+	</div>
+
+	
+	
+		
+	
+	<div id="mobilesidebar-post" class="mobilesidebar-item" style="margin-top:10px; padding-bottom:20px; flex: 1; text-align: center;" hx-get="https://groups.io/g/peds-endo/post"  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})" >
+		<div style="display: inline-block; position: relative;">
+			<div style="position: relative;display: inline-block;">
+			<i class="fa-fw fa-light fa-edit fa-2x"></i>
+			
+			</div><br>
+			<span style="font-size:12px;">New Topic</span>
+		</div>
+	</div>
+
+	
+
+						
+	
+		
+			
+				
+	
+	<div id="mobilesidebar-chats" class="mobilesidebar-item" style="margin-top:10px; padding-bottom:20px; flex: 1; text-align: center;" hx-get="https://groups.io/g/peds-endo/chats"  hx-boost="true" hx-target="#maincontent-refresh" hx-push-url="true" hx-history="false" hx-on::after-request="document.getElementById('maincontent').scrollTo({top: 0, behavior: 'instant'})" >
+		<div style="display: inline-block; position: relative;">
+			<div style="position: relative;display: inline-block;">
+			<i class="fa-fw fa-light fa-message-dots fa-2x"></i>
+			
+			</div><br>
+			<span style="font-size:12px;">Chat</span>
+		</div>
+	</div>
+
+			
+		
+	
+
+					
+					<div style="flex: 1; text-align: center;margin-top:10px" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false">
+						<i class="fa-fw fa-light fa-bars fa-2x"></i><br>
+						<span style="font-size:12px;">More</span>
+					</div>
+				</div>
+			</div>
+			<section class="drawer drawer-left" id="drawer-name" data-drawer-target>
+				<div class="drawer-overlay" data-drawer-close tabindex="-1"></div>
+				<div class="drawer-wrapper drawer-wrapper-top">
+					<div class="drawer-header">
+						<div class="drawer-title">
+							<i class="fa-fw fa-regular fa-bars fa-3x"></i>
+							<span class="sr-only">
+								More Options
+							</span>
+							More
+						</div>
+						<button class="drawer-close" data-drawer-close aria-label="Close Drawer"></button>
+					</div>
+					<div class="drawer-content">
+						<div class="list-group noborderlist">
+							
+
+
+	<a title="Group Home" href="https://groups.io/g/peds-endo" class="list-group-item sidebar-item">
+		<i class="fa-fw fa fa-home fa-lg"></i>
+		Home
+		
+			
+				
+				
+			
+		
+	</a>
+
+	
+		<a href="#submenu1" class="noborderitem list-group-item sidebar-section navbar-vertical dropdown-indicator" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="submenu1">
+			<i class="fa-fw fa fa-pencil-alt fa-lg"></i>
+			Subscription
+		</a>
+		<div class="collapse" id="submenu1">
+			
+
+	<a title="Edit Subscription Settings" href="https://groups.io/g/peds-endo/editsub" id="sidebar-editsub-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-editsub">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-pencil-alt fa-lg"></i>
+			Settings
+			<span id="sidebar-editsub-mobile-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Group Profile" href="https://groups.io/g/peds-endo//profile/9263642" id="sidebar-profileview-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-profileview">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-user fa-lg"></i>
+			Group Profile
+			<span id="sidebar-profileview-mobile-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Delivery History" href="https://groups.io/g/peds-endo/subdeliveries" id="sidebar-subdeliveries-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-subdeliveries">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-envelope fa-lg"></i>
+			Delivery History
+			<span id="sidebar-subdeliveries-mobile-badge" class="badge"></span>
+		</span>
+	</a>
+
+			
+
+	<a title="Integrations" href="https://groups.io/g/peds-endo/subintegrations" id="sidebar-subintegrations-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-subintegrations">
+		<span class="list-group-submenu">
+			<i class="fa-fw fa fa-exchange-alt fa-lg"></i>
+			Integrations
+			<span id="sidebar-subintegrations-mobile-badge" class="badge"></span>
+		</span>
+	</a>
+
+		</div>
+	
+
+	
+
+	
+		
+	
+		
+
+	<a title="Messages" href="https://groups.io/g/peds-endo/topics?sidebar=true" id="sidebar-archives-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-archives active"> 
+		<i class="fa-fw fa fa-comments fa-lg"></i>
+		Messages
+		<span id="sidebar-archives-mobile-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="New Topic" href="https://groups.io/g/peds-endo/post" id="sidebar-post-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-post"> 
+		<i class="fa-fw fa fa-edit fa-lg"></i>
+		New Topic
+		<span id="sidebar-post-mobile-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="Drafts" href="https://groups.io/g/peds-endo/drafts" id="sidebar-drafts-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-drafts"> 
+		<i class="fa-fw fa fa-inbox fa-lg"></i>
+		Drafts
+		<span id="sidebar-drafts-mobile-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="New Poll" href="https://groups.io/g/peds-endo/addpoll" id="sidebar-addpoll-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-addpoll"> 
+		<i class="fa-fw fa fa-chart-bar fa-lg"></i>
+		New Poll
+		<span id="sidebar-addpoll-mobile-badge" class="badge"></span>
+	</a>
+
+	
+	
+		
+
+	<a title="Hashtags" href="https://groups.io/g/peds-endo/hashtags" id="sidebar-hashtags-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-hashtags"> 
+		<i class="fa-fw fa fa-hashtag fa-lg"></i>
+		Hashtags
+		<span id="sidebar-hashtags-mobile-badge" class="badge"></span>
+	</a>
+
+	
+
+		
+	
+		
+			
+
+	<a title="Chats" href="https://groups.io/g/peds-endo/chats" id="sidebar-chats-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-chats"> 
+		<i class="fa-fw fa fa-message-dots fa-lg"></i>
+		Chats
+		<span id="sidebar-chats-mobile-badge" class="badge chatbadge"></span>
+	</a>
+
+		
+	
+
+	
+
+	
+
+	
+
+	
+		
+	
+
+	
+		
+
+	<a title="Member Directory" href="https://groups.io/g/peds-endo/directory" id="sidebar-directory-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-directory"> 
+		<i class="fa-fw fa fa-users fa-lg"></i>
+		Directory
+		<span id="sidebar-directory-mobile-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+
+	<a title="Calendar" href="https://groups.io/g/peds-endo/calendar" id="sidebar-calendar-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-calendar"> 
+		<i class="fa-fw fa fa-calendar-alt fa-lg"></i>
+		Calendar
+		<span id="sidebar-calendar-mobile-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+			
+
+	<a title="Photos" href="https://groups.io/g/peds-endo/photos" id="sidebar-photos-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-photos"> 
+		<i class="fa-fw fa fa-file-image fa-lg"></i>
+		Photos
+		<span id="sidebar-photos-mobile-badge" class="badge"></span>
+	</a>
+
+		
+		
+			
+
+	<a title="Files" href="https://groups.io/g/peds-endo/files" id="sidebar-files-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-files"> 
+		<i class="fa-fw fa fa-copy fa-lg"></i>
+		Files
+		<span id="sidebar-files-mobile-badge" class="badge"></span>
+	</a>
+
+		
+
+		
+			
+
+	<a title="Databases" href="https://groups.io/g/peds-endo/database" id="sidebar-database-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-database"> 
+		<i class="fa-fw fa fa-database fa-lg"></i>
+		Databases
+		<span id="sidebar-database-mobile-badge" class="badge"></span>
+	</a>
+
+		
+		
+			
+
+	<a title="Donations" href="https://groups.io/g/peds-endo/viewdonations" id="sidebar-viewdonations-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-viewdonations" hx-boost="false" hx-disinherit="*"> 
+		<i class="fa-fw fa fa-usd-circle fa-lg"></i>
+		Donations
+		<span id="sidebar-viewdonations-mobile-badge" class="badge"></span>
+	</a>
+
+		
+	
+
+	
+		
+
+	<a title="Wiki" href="https://groups.io/g/peds-endo/wiki" id="sidebar-wiki-mobile" class="noborderitem list-group-item sidebar-item sidebar-item-wiki"> 
+		<i class="fa-fw fa fa-book fa-lg"></i>
+		Wiki
+		<span id="sidebar-wiki-mobile-badge" class="badge"></span>
+	</a>
+
+	
+
+	
+		
+
+			
+
+		
+
+	
+
+							
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/static/about" style="border-top:5px solid #ddd;">
+									<i class="fa-fw fal fa-envelope fa-lg"></i>
+									About
+								</a>
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/static/features">
+									<i class="fa-fw far fa-tasks fa-lg"></i>
+									Features
+								</a>
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/static/pricing">
+									<i class="fa-fw fa fa-dollar-sign fa-lg"></i>
+									Pricing
+								</a>
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/g/updates/messages?expanded=1">
+									<i class="fa-fw far fa-thermometer-three-quarters fa-lg"></i>
+									# Changelog
+								</a>
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/static/tos">
+									<i class="fa-fw fal fa-newspaper fa-lg"></i>
+									Terms
+								</a>
+								<a class="noborderitem list-group-item sidebar-item" href="https://groups.io/helpcenter">
+									<i class="fa-fw fa fa-info-circle fa-lg"></i>
+									Help
+								</a>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+<!-- Modal Dialog for Autocomplete -->
+<div class="modal fade" id="quickActionsModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <input type="text" class="form-control" id="quickActionsInput" placeholder="Go to page..." style="margin-bottom:10px">
+        <div id="quickActionsContainer" class="autocompleteResults" style="max-height:250px; overflow-y: auto;"></div>
+		<div class="text-center" style="margin-top:10px; font-size:12px;"><i class="fa-sharp fa-arrow-up-arrow-down"></i> to navigate&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-arrow-turn-down-left"></i> to use&nbsp;&nbsp;&nbsp;<strong>esc</strong> to dismiss</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+	var quickActionsData = [
+		
+		
+			{name: "Subscription Settings", url: "https://groups.io/g/peds-endo/editsub"},
+			{name: "Group Profile", url: "https://groups.io/g/peds-endo/profile/9263642"},
+			{name: "Delivery History", url: "https://groups.io/g/peds-endo/subdeliveries"},
+			{name: "Member Integrations", url: "https://groups.io/g/peds-endo/subintegrations"},
+		
+			{name: "Group Home", url: "https://groups.io/g/peds-endo"},
+		
+
+		
+			{name: "Topics", url: "https://groups.io/g/peds-endo/topics"},
+			{name: "Messages", url: "https://groups.io/g/peds-endo/messages"},
+			{name: "Expanded Messages", url: "https://groups.io/g/peds-endo/messages?expanded=1"},
+		
+		
+			{name: "Polls", url: "https://groups.io/g/peds-endo/polls"},
+		
+		
+			{name: "Hashtags", url: "https://groups.io/g/peds-endo/hashtags"},
+		
+		
+			{name: "New Topic", url: "https://groups.io/g/peds-endo/post"},
+		
+		
+			{name: "New Poll", url: "https://groups.io/g/peds-endo/addpoll"},
+		
+		
+			{name: "Drafts", url: "https://groups.io/g/peds-endo/drafts"},
+		
+
+		
+			
+				{name: "Chats", url: "https://groups.io/g/peds-endo/chats"},
+			
+		
+
+		
+		
+		
+			{name: "Member Directory", url: "https://groups.io/g/peds-endo/directory"},
+		
+
+		
+			{name: "Calendar", url: "https://groups.io/g/peds-endo/calendar"},
+		
+
+		
+			
+				{name: "Photos", url: "https://groups.io/g/peds-endo/photos"},
+			
+			
+				{name: "Files", url: "https://groups.io/g/peds-endo/files"},
+			
+
+			
+				{name: "Databases", url: "https://groups.io/g/peds-endo/database"},
+			
+			
+				{name: "Donations", url: "https://groups.io/g/peds-endo/donations"},
+			
+		
+		
+			{name: "Wiki", url: "https://groups.io/g/peds-endo/wiki"},
+		
+		
+		/* other pages */
+		{name: "Help", url: "/helpcenter"},
+		{name: "Feed", url: "/feed"},
+		{name: "Your Groups", url: "/groups"},
+		{name: "Your Calendar", url: "/calendar"},
+		{name: "Your Activity", url: "/activity"},
+		{name: "Your Pending Messages", url: "/pendingmsgs"},
+		{name: "Account Login", url: "/account"},
+		{name: "Account Preferences", url: "/account?page=prefs"},
+		{name: "Account Security", url: "/account?page=security"},
+		{name: "Account Identity", url: "/account?page=profile&member_info_id=0"},
+		{name: "Account Notifications", url: "/account?page=notifications"},
+		{name: "Account Other Services", url: "/account?page=oauth"},
+		{name: "Account Bounces", url: "/account?page=bounces"},
+		{name: "Account Billing", url: "/account?page=billing"},
+		{name: "Find a Group", url: "/search?p=SubsCount,,,20,2,0,0"},
+	];
+
+
+	InitAutocomplete("quickActions", quickActionsData);
+
+	document.addEventListener('keydown', function(event) {
+		var tagName = event.target.tagName.toLowerCase();
+		if (tagName === 'input' || tagName === 'textarea' || event.target.isContentEditable) {
+			return;
+		}
+		// check if the viewimages viewer is up
+		let element = document.getElementById('overlay');
+		if (element && element.classList.contains('visible')) {
+			return;
+		}
+		if (event.key.toLowerCase() === '/') {
+			if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+				// For Mac
+				// Check if Command (event.metaKey) is pressed, and either Option (event.altKey) is pressed or not
+				if (event.metaKey) {
+					event.preventDefault();
+					showAutocompleteModal("quickActions");
+					return;
+				}
+			} else {
+				// For Windows and Linux
+				if (event.ctrlKey) {
+					event.preventDefault();
+					showAutocompleteModal("quickActions");
+					return;
+				}
+			}
+		}
+	});
+	function UpdateSidebar(id) {
+		console.log(id + " was clicked");
+		var sidebarItems = document.querySelectorAll('.mobilesidebar-item');
+		sidebarItems.forEach(function(item) {
+			var iElement = item.getElementsByTagName('div')[0].getElementsByTagName('i')[0];
+			if (item.id == "mobilesidebar-" + id) {
+				console.log("making solid " + id)
+				iElement.classList.add('fa-solid');
+				iElement.classList.remove('fa-light');
+			} else {
+				iElement.classList.remove('fa-solid');
+				iElement.classList.add('fa-light');
+			}
+		});
+		var sidebarItems = document.querySelectorAll('.sidebar-item');
+		// remove 'active' class from all 'sidebar-item' elements
+		sidebarItems.forEach(function(item) {
+			if (item.id == "sidebar-" + id) {
+				console.log("making active " + id)
+				item.classList.add('active');
+			} else {
+				item.classList.remove('active');
+			}
+		});
+	}
+</script>
+
+
+			</div>
+			
+				<div id="scroll-top-outer">
+					<div id="scroll-top" class="scroll-top-wrapper hidden-xs">
+						<span class="scroll-top-inner">
+							<i class="fa fa-arrow-circle-up fa-fw fa-2x"></i>
+						</span>
+					</div>
+				</div>
+<script>
+	$(function() {
+		$(document).on('scroll', function() {
+			if ($(window).scrollTop() > 100) {
+				$('.scroll-top-wrapper').addClass('show');
+			} else {
+				$('.scroll-top-wrapper').removeClass('show');
+			}
+		});
+		$('.scroll-top-wrapper').on('click', scrollToTop);
+	});
+
+	function scrollToTop() {
+		verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+		element = $('body');
+		offset = element.offset();
+		offsetTop = offset.top;
+		$('html, body').animate({
+			scrollTop: offsetTop
+		}, 100, 'linear');
+	}
+
+	if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+		let elements = document.querySelectorAll('strong.ctrlmeta');
+		elements.forEach((element) => {
+			// Check if the innerText is "ctrl"
+			if (element.innerText === 'ctrl') {
+				// Create a new "i" element
+				let newElement = document.createElement('i');
+				newElement.classList.add('fa-solid', 'fa-command');
+				
+				// Replace the old "strong" element with the new "i" element
+				element.parentNode.replaceChild(newElement, element);
+			}
+		});
+	}
+</script>
+			
+			
+
+
+		</body>
+	</html>
+
